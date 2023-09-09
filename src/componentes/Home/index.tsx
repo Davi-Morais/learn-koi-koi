@@ -1,7 +1,9 @@
+import Quiz from "../Quiz";
+
+import data from "./Home.json" //importar o arquivo json correspondente
 
 function Home () {
 
-    
     return (
         <>
             <article>
@@ -25,6 +27,9 @@ function Home () {
 
                 <p>Acho que é só isso por enquanto, "Stop"!</p>
             </article>
+
+            <Quiz quiz={data} />
+
         </>
     )
 }
