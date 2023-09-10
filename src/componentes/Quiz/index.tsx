@@ -1,3 +1,4 @@
+//import "./index.css"
 type opcao = {
     chave: number,
     valor: string
@@ -6,27 +7,43 @@ type opcao = {
 type typeQuiz = {
     pergunta: string,
     opcoes: Array<opcao>,
-    resposta: string,
+    resposta: number,
 }
 
-function Quiz(props:any){
 
-    const quiz:typeQuiz = props.quiz;
+interface QuizOpcoes {
+    opcoes: Array<opcao>
+}
+function Opcoes({opcoes}:QuizOpcoes) {
 
-    const opcoes:Array<any> = []
-    quiz.opcoes.map(o => {
-        opcoes.push(<li key={o.chave}>{o.valor}</li>);
-    })
+    function retornarOpcoes(opcoes:Array<opcao>) {
+        return opcoes.map((o) => {
+            return <li key={o.chave}>{o.valor}</li>
+        })
+    }
 
-    return(
+    return (
         <>
-            <section className="quiz">
-                <p className="pergunta">{quiz.pergunta}</p>
+            {retornarOpcoes(opcoes)}
+        </>
+    )
+}
+
+
+
+interface QuizProps {
+    quiz: typeQuiz
+}
+function Quiz({quiz}:QuizProps){
+
+    return (
+        <>
+            <div className="quiz">
+                <h3 className="quiz_pergunta">{quiz.pergunta}</h3>
                 <ul className="opcoes">
-                    {opcoes}
+                    <Opcoes opcoes={quiz.opcoes} />
                 </ul>
-                <div className="submit">Submit</div>
-            </section>
+            </div>
         </>
     )
 }
