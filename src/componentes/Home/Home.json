@@ -1,8 +1,8 @@
 {
     "pergunta": "Você quer aprender Hanafuda Koi-Koi??",
     "opcoes": [
-        {"chave":1, "valor":"É claro que sim!"},
-        {"chave":2, "valor":"Nop"},
+        {"chave":1, "valor":"Nop"},
+        {"chave":2, "valor":"É claro que sim!"},
         {"chave":3, "valor":"Sei la"},
         {"chave":4, "valor":"Uou!!"}
     ],
