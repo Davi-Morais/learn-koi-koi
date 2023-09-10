@@ -62,8 +62,6 @@ function Quiz({quiz}:QuizProps){
             }
             return e
         }))
-        
-        console.log(resultado)
     }
 
     return (
