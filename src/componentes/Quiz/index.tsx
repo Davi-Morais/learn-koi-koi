@@ -28,8 +28,8 @@ function Opcoes({opcoes, onOptionClick}:QuizOpcoes) {
     function retornarOpcoes(opcoes:Array<opcao>) {
         return opcoes.map((o) => {
             return (
-                <div className={`divOpcoes ${o.correta}`} key={o.chave} >
-                    <li onClick={() => onOptionClick(o)} >
+                <div onClick={() => onOptionClick(o)} className={`divOpcoes ${o.correta}`} key={o.chave} >
+                    <li >
                         {o.valor}
                     </li>
                 </div>

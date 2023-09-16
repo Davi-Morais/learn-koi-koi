@@ -1,10 +1,54 @@
+.quiz * {
+    margin: 0%;
+    padding: 0%;
+}
+
+.quiz {
+
+    border: solid 2px black;
+
+    max-width: 700px;
+    min-width: none;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 5px 20px 5px;
+}
+
+.quiz_pergunta {
+    text-align: center;
+
+    margin-bottom: 20px;
+    font-size: x-large;
+    line-break: auto;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .divOpcoes {
-    background-color: rgb(74, 121, 240);
-    color: aliceblue;
+    background-color: aliceblue;
+    color: rgb(24, 24, 24);
+
     list-style: none;
-    border: solid 1px rgb(0, 0, 0);
+
+    border: solid 1px rgb(24, 24, 24);
+
     cursor: pointer;
+
     margin: 5px;
+    height: 40px;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family:monospace;
+    font-size: larger;
 }
 
 .correta {
