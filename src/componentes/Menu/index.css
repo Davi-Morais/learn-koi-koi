@@ -1,0 +1,46 @@
+.menu * {
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu {
+    background-color: rgb(61, 1, 61);
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.rotas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    max-width: 800px;
+
+}
+
+.rotas li a {
+    height: 100px;
+    width: 100px;
+
+    color: aliceblue;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotas li a:hover {
+    background-color: aliceblue;
+    color: rgb(61, 1, 61);
+}
