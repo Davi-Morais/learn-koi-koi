@@ -1,11 +1,11 @@
 import AppRoutes from "./routes"
-import Menu from "./componentes/Menu"
+import Top from "./componentes/Top"
 
 function App() {
 
   return (
     <>
-      <Menu />
+      <Top />
       <AppRoutes />
     </>
   )
