@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+
+.topoPagina * {
+    padding: 0%;
+    margin: 0%;
+}
+
+.topoPagina {
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.carta {
+    margin: 5px;
+}
+
+.nomeSite {
+    font-family: 'Joti One', cursive;
+    font-size: 60px
+}
