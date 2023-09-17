@@ -1,6 +1,13 @@
+import { useState } from 'react';
+
 import './index.css'
+import imagens from "../../Imagens"
+
 
 function Top (){
+
+    const [month, setMonth] = useState(new Date().getMonth());
+
     return (
         <>
             <section className="topoPagina">
@@ -9,10 +16,10 @@ function Top (){
                 </div>
 
                 <div className="images">
-                    <img src="/janeiro/Hanafuda_January_Hikari.svg.png" key='1' className="carta" />
-                    <img src="/janeiro/Hanafuda_January_Kasu_1.svg.png" key='2' className="carta" />
-                    <img src="/janeiro/Hanafuda_January_Kasu_2.svg.png" key='3' className="carta" />
-                    <img src="/janeiro/Hanafuda_January_Tanzaku.svg.png" key='4' className="carta" />
+                    <img src={imagens[month][0]} key='1' className="carta" />
+                    <img src={imagens[month][1]} key='2' className="carta" />
+                    <img src={imagens[month][2]} key='3' className="carta" />
+                    <img src={imagens[month][3]} key='4' className="carta" />
                 </div>
             </section>
         </>
