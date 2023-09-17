@@ -2,3 +2,38 @@
     padding: 0%;
     margin: 0%;
 }
+
+.body {
+    background-color: aliceblue;
+}
+
+.blocoTexto {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artigo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:baseline;
+    max-width: 1000px;
+    height: auto;
+}
+
+.artigo * {
+    margin: 15px 50px 15px 50px;
+    font-family: monospace;
+    font-size: 20px;
+    line-break:normal;
+    text-align: start;
+}
+
+
+.titleArtigo {
+    font-family: cursive;
+    font-size: xx-large;
+}
