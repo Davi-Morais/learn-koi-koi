@@ -1,4 +1,4 @@
-import Quiz from "../Quiz";
+import Quiz from "../../ui/componentes/Quiz";
 
 import dados from "./Home.json" //importar o arquivo json correspondente
 

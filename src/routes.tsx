@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import Home from './componentes/Home';
-import Regras from './componentes/Regras';
+import Home from './paginas/Home';
+import Regras from './paginas/Regras';
 
 
 function AppRoutes() {

@@ -1,5 +1,5 @@
 import AppRoutes from "./routes"
-import Top from "./componentes/Top"
+import Top from "./ui/componentes/Top"
 
 function App() {
 
