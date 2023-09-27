@@ -67,10 +67,12 @@ function Quiz({quiz}:QuizProps){
     return (
         <>
             <div className="quiz">
-                <h3 className="quiz_pergunta">{quiz.pergunta}</h3>
-                <ul className="opcoes">
-                    <Opcoes opcoes={opcoes} onOptionClick={handleOptionClick} />
-                </ul>
+                <div className="quiz-conteiner">
+                    <h3 className="quiz_pergunta">{quiz.pergunta}</h3>
+                    <ul className="opcoes">
+                        <Opcoes opcoes={opcoes} onOptionClick={handleOptionClick} />
+                    </ul>
+                </div>
             </div>
         </>
     )
